@@ -9,11 +9,9 @@ const Movies = () => {
   return (
     <div className='movies'>
       {!!movies.length ? (
-
         movies.map((movie) => ( 
           <MovieCard key={movie.id} movie={movie} />
         ))
-
       ) : (
         <h4>Loading...</h4>
       )}

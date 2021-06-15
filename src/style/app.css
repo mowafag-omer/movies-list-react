@@ -24,7 +24,7 @@ body {
   align-items: center;
   max-width: 100vW;
   min-height: 100vh;
-  background: rgb(218, 218, 218);
+  background: #dee0cf;
 }
 
 .app .title {

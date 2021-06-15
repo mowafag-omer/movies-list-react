@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/mowafag-omer/movies-list-react#readme",
   "dependencies": {
+    "multiselect-react-dropdown": "^1.6.13",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "react-redux": "^7.2.4",
     "redux": "^4.1.0",
     "redux-thunk": "^2.3.0"

@@ -12,7 +12,7 @@ const App = () => {
   const dispatch = useDispatch()
   const state = useSelector(state => state)
 
-  const pagesNum = getPagesNumber(state.movies.length, state.moviesPerPage)
+  const pagesNum = getPagesNumber(state.filteredmovies.length, state.moviesPerPage)
   const categories = getCategories(state.movies)
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const App = () => {
         <h2>Movies</h2>
       </div>
 
-      <Filter categories={categories} />
+      {!!categories.length && <Filter categories={categories} />}
 
       <Pagination 
         pagesNum={pagesNum} 
