@@ -1,0 +1,13 @@
+.filter {
+  padding: 2rem 0 1rem;
+  width: 17rem;
+  border-bottom: 1px solid var(--primary);
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.filter label {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}

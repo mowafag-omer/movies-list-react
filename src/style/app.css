@@ -1,0 +1,39 @@
+@import './movies.css';
+@import './movieCard.css';
+@import './filter.css';
+@import './pagination.css';
+
+:root {
+  --primary: #8db9a5;
+  --secondary: #263e5a;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 100vW;
+  min-height: 100vh;
+  background: rgb(218, 218, 218);
+}
+
+.app .title {
+  margin: 0;
+  width: 100%;
+  background: var(--primary);
+  color: var(--secondary)
+}
+
+.title h2 {
+  margin: .8rem;
+}

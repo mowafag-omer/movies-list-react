@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 14rem;
+  height: 15rem;
+  margin: .5rem;
+  border: 1px solid gray;
+  border-radius: 7px;
+  background: var(--primary);
+  color: var(--secondary);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card button {
+  padding: .5rem 1.2rem;
+  background: var(--secondary); 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

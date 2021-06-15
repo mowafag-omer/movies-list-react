@@ -1,0 +1,4 @@
+export const LOAD_MOVIES = "LOAD_MOVIES" 
+export const LOAD_CURRENT_MOVIES = "LOAD_CURRENT_MOVIES" 
+export const CHANGE_PAGE = "CHANGE_PAGE" 
+export const CHANGEPERPAGE = "CHANGEPERPAGE" 
