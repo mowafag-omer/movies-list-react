@@ -4,6 +4,7 @@ import filterByCategory from "../utils/filterByCategory"
 
 let initialState = {
   movies: [],
+  loading: true,
   filteredmovies: [],
   filterCategories: [],
   currentMovies: [],
@@ -19,7 +20,8 @@ export let reducer = (state = initialState, action) => {
       return {
         ...state,
         movies: action.payload,
-        filteredmovies: action.payload
+        filteredmovies: action.payload,
+        loading: false
       }
     case FILTER_MOVIES:
       updatedList = filterByCategory(action.payload, state.movies)
