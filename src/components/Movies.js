@@ -1,9 +1,8 @@
 import React from 'react'
-import { useSelector, useDispatch } from "react-redux"
+import { useSelector } from "react-redux"
 import MovieCard from './MovieCard'
 
 const Movies = () => {
-  const dispatch = useDispatch()
   const state = useSelector((state) => state)
 
   return (

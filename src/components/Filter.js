@@ -27,12 +27,6 @@ const Filter = ({ categories }) => {
           onRemove={onRemove}
           displayValue="category"
         />
-        {/* <select>
-          <option>Categories</option>
-          {categories.map((cat) => (
-            <option key={cat} value={cat}>{cat}</option>
-          ))}
-        </select> */}
       </label>
     </div>
   )

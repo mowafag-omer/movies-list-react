@@ -10,7 +10,6 @@ const MovieCard = ({ movie }) => {
   return (
     <div className='card'> 
       <h3> {movie.title}</h3>
-
       <h5>{movie.category}</h5>
 
       <div className="likes">
@@ -18,12 +17,10 @@ const MovieCard = ({ movie }) => {
           <AiTwotoneLike size={25} />
           {movie.likes}  
         </div>
-
         <div>
          <AiTwotoneDislike size={25} />
           {movie.dislikes}  
         </div>
-
       </div>
 
       <button onClick={() => dispatch(deleteMovie(movie.id))}>

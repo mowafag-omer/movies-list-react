@@ -3,8 +3,8 @@ import getCurrentMovies from '../utils/getCurrentMovies'
 import filterByCategory from "../utils/filterByCategory"
 
 let initialState = {
-  movies: [],
   loading: true,
+  movies: [],
   filteredmovies: [],
   filterCategories: [],
   currentMovies: [],
@@ -30,21 +30,21 @@ export let reducer = (state = initialState, action) => {
         filteredmovies: updatedList,
         filterCategories: action.payload
       }
-      case DELETE_MOVIE:
-        updatedList = [...state.movies]
-        updatedList = updatedList.filter(movie => movie.id !== action.payload)
-        const updatedFilter = filterByCategory([...state.filterCategories], updatedList)
-        return {
-          ...state,
-          movies: updatedList,
-          filteredmovies: updatedFilter
-        }
+    case DELETE_MOVIE:
+      updatedList = [...state.movies]
+      updatedList = updatedList.filter(movie => movie.id !== action.payload)
+      const updatedFilter = filterByCategory(state.filterCategories, updatedList)
+      return {
+        ...state,
+        movies: updatedList,
+        filteredmovies: updatedFilter
+      }
     case LOAD_CURRENT_MOVIES:
       const {filteredmovies, currentPage, moviesPerPage} = state
       updatedList = getCurrentMovies([...filteredmovies], currentPage, moviesPerPage)
       return {
         ...state,
-        currentMovies: [...updatedList]
+        currentMovies: updatedList
       }
     case CHANGE_PAGE:
       return {
